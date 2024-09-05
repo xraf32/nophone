@@ -90,9 +90,28 @@ Replace phone by other devices where possible
     ```
     </p></details>
 5. Remove the SD from the computer and put it in the Rock64. Connect the keyboard, mouse, HDMI monitor and RJ45 cable. Only then connect the power supply
-6. The Rock64 will boot. Use the keyboard, mouse and monitor to configure whatever is needed. For example, the default keyboard layout and passwords, and hostname.
-7. Find the IP of the Rock64 within the network. After you login, this info is shown in the HDMI monitor. You can also use a command like `ip a`. This will also be shown in the router admin page.
+6. The Rock64 will boot. Use the keyboard, mouse and monitor to configure whatever is needed. For example, the default keyboard layout and passwords, and hostname. Default password is `dietpi`. In step 4, X and XFCE were installed. They can be tested with the command `startx`.
+7. Find the IP of the Rock64 within the network: <details><summary>some ways to do this. In this example, it is `192.168.15.18`</summary><p>
+   a. logout (`exit`) and login again in DietPi (default password: `dietpi`). This will be shown in the HDMI monitor:
+   ![r64_setup2](https://github.com/user-attachments/assets/f1d77ec0-e9ff-48ac-9c32-453e552ab420)
+   
+   b. in DietPi, issue the command `ip a`:
+   ![r64_setup3](https://github.com/user-attachments/assets/72ae5736-bf85-4d41-a3de-64e13a989d73)
 
+    </p></details>
+8. Go back to the computer, open a terminal and issue `ssh dietpi@192.168.15.18`, replacing `192.168.15.18` by the actual IP found in step 7. Type your DietPi password (default: `dietpi`). This is remote SSH access, a much easier way to control the Rock64. The keyboard, mouse and HDMI monitor are no longer needed and can be disconnected from the Rock64.
+9. Test the internet connection and update the system:
+    ```
+    sudo apt update
+    sudo apt full-upgrade
+    ```
+    <details><summary>Why the internet connection matters even if the slave will not use a web app</summary><p>
     
+      The computer has an RTC clock soldered to the motherboard, powered by an independent battery, and this is why it does not reset the time at every boot even if it ran out of power. The Rock64 does not have this. DietPi corrects the time at every boot syncing with an NTP server. So, without internet, the clock will be wrong. That, in turn, will prevent HTTPS connections, including those of `apt` itself, but the errors messages don't say anything about time or clock. To avoid this snowball of problems, either install an RTC module or make sure the internet connection always works. The second option requires the same infrastructure of the SSH remote access, so it is cleaner and simpler.
+   
+    </p></details>
+    
+10. Install `sftp-server` in Rock64. Without this, `scp` won't work to transfer files between the computer and Rock64: `sudo apt install openssh-sftp-server`
+11. 
 
-8. 
+

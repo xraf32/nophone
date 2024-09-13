@@ -3,48 +3,54 @@ Replace phone by other devices where possible
 
 ## Why
 <details><summary>1. A waste of money is a waste of life</summary><p>
-  The average thirdworldian slave must work 1 month to buy a phone which is sold at $100 in USA. The slave is also forced to have a phone to be able to access the fake money it has in the bank. The battery is designed to fail first. If the slave sleeps 8h/day and does not use the phone to wake up in the next morning, said phone can be turned off without charging at night. This will delay the need to buy a new phone. How much is that worth?
+  A phone sold for $100 in USA costs 1 month of the average income in Brazil. There is also a law that forbids banks of offering services to individuals without a phone app. This is very convenient for the 4 big banks, which can afford to have multiple development teams for Android and iOS instead of just one team for just one responsive website. The usual excuse is "security", of course. An individual, better described as a "slave", is forced to have a phone in order to access its own fake money at the bank, but such phone will stop working soon and the slave will need to buy a new one. How much can the slave save of its meaningless lifespan by being aware of all this?
 
   1. Baseline slave: 24 h/day, always fast-charging, unaware of the damage caused by trickle charging.
 
-    100 / 2 $/year = 0.5 month/year = 0.5/12 month/month = 4.2% of slave life
+    100 / 2 $/year = 0.5 month/year = 0.5/12 month/month = 4.2% of slave lifespan
 
-  2. Smart slave who bought an alarm clock: (24-8) h/day + $5 for an alarm clock with 6-year lifespan + $1/year for the alkaline batteries.
+  2. Smart slave who bought an alarm clock, so the phone is kept off during sleep hours:
+    
+    (24-8) h/day + $5 for an alarm clock with 6-year lifespan + $1/year for the alkaline batteries.
 
-    Each 72h of slave life only consume 48h of phone life. So:
-    New durability: 2 * 72/48 = 3 years
+    Each 72h of slave life only consume 48h of phone lifetime. So:
+    New phone lifespan: 2 * 72/48 = 3 years
     Alarm clock: lasts 6 years, so it costs (5/6 + 1) $/year, being 1 $/year for the alkaline batteries
 
-    (5/6 + 1) + 100/3 = 35.16 $/year = 0.3516/12 = 2.9 % of human life
+    (5/6 + 1) + 100/3 = 35.16 $/year = 0.3516/12 = 2.9 % of human lifespan
 
-    The alarm clock is worth 1.2% of life. 
+    The alarm clock is worth 1.2% of lifespan. 
     Equivalent to a huge discount of 1 - 2.9/4.2 = 31 % in the phone purchase.
 
-  3. Expert: 06 h/day, most of the time in flight-mode, controlled slow charging at night with cooling, no trickle-charging and a custom debloated ROM like LineageOS. The limiting factor is no longer the battery life, but the slowness of the phone as the software gets more and more complex over time and the hardware wears down physically. The alarm clock is the same, but now there is both extra cost and extra longevity besides the baseline of phone off-time.
+  3. Expert slave: phone on only 06 h/day, most of the time in flight-mode, controlled slow charging at night with cooling, no trickle-charging and a custom debloated ROM like LineageOS.
+    
+    Change: the limiting factor is not the battery, but phone slowness. Software demands more and more whereas hardware wears down.
+
+    The alarm clock is still the same, but the more complex setup adds both cost and extra longevity.
 
     Each 96h of slave life only consume 24h of phone life. So:
-    New baseline durability: 2 * 96/24 = 8 years
-    Emerging extra longevity (guess): +1 year
-    Extra cost due to all the extra complexity (guess): $80
+    New phone lifespan simply due to turning it off: 2 * 96/24 = 8 years
+    Emerging extra phone lifespan added by the new setup (guess): +1 year
+    Extra cost added by the new setup (guess): $80
     
     (5/6 + 1) + (100 + 80)/(8+1) $/year = $21.83/year = 0.2183/12 = 1.8% of human life
 
     Thus, first a simple clock saves 1.2% of life, but after that, saving 1.1% is much harder.
     The marginal gain decreases. This is realistic. Paretto's principle, Law of Diminishing Returns, etc.
     
-    But it is still a whopping discount of 1 - 1.8/4.2 = 57 % in the phone purchase!
+    But it still equates to a whopping discount of 1 - 1.8/4.2 = 57 % in the phone purchase!
   
 </p></details>
 
 <details><summary>2. OPSEC and privacy, ultimately freedom</summary><p>
-  A loose piece of information is worthless for people trying to scam, tax, censor, harm or control the slave. The phone ties together all the data the slave generates there to its identity and location, which makes it a goldmine to these people. The more the slave replaces its phone with devices under its full control in its daily routine, the more the slave turns the goldmine into a garbage dump.
+  A loose piece of information is worthless for the higher slaves trying to scam, tax, censor, harm or control the lower slave. The phone ties together all the data the slave generates there to its identity and location, which makes it a goldmine to the higher slaves. The more the lower slave replaces its phone with devices under its full control in its daily routine, the more the lower slave turns the goldmine into a garbage dump.
   
 </p></details>
 
 </p></details>
 
 <details><summary>3. flexibility, ultimately peace</summary><p>
-  The slave decides how his devices work, not a designer worried about ad revenue and whatnot.
+  The lower slave decides how his devices work, not a higher slave worried about ad revenue and whatnot.
   
 </p></details>
 
@@ -107,11 +113,11 @@ Replace phone by other devices where possible
     ```
     <details><summary>Why the internet connection matters even if the slave will not use a web app</summary><p>
     
-      The computer has an RTC clock soldered to the motherboard, powered by an independent battery, and this is why it does not reset the time at every boot even if it ran out of power. The Rock64 does not have this. DietPi corrects the time at every boot syncing with an NTP server. So, without internet, the clock will be wrong. That, in turn, will prevent HTTPS connections, including those of `apt` itself, but the errors messages don't say anything about time or clock. To avoid this snowball of problems, either install an RTC module or make sure the internet connection always works. The second option requires the same infrastructure of the SSH remote access, so it is cleaner and simpler.
+    A computer has an RTC clock powered by an independent battery, this is why its clock does not reset at every boot. An SBC like the Rock64 does not have this. DietPi corrects the time at every boot by syncing the system clock to an NTP server over the internet. So, without internet, the clock will be wrong. That will prevent HTTPS connections, but the error messages will not indicate the problem is the clock. To avoid this snowball of stupidity, it is easier to make sure the internet always works than to install an RTC module. Moreover, the setup for the internet is the same for SSH access, which is the best solution to interface with an SBC anyway.
    
     </p></details>
     
-10. Install `sftp-server` in Rock64. Without this, `scp` won't work to transfer files between the computer and Rock64: `sudo apt install openssh-sftp-server`
-11. 
+11. Without `sftp-server`, `scp` won't work to transfer files between the computer and Rock64. So install that package: `sudo apt install openssh-sftp-server`
+12. 
 
 

@@ -31,7 +31,9 @@ Replace phone by other devices where possible
     Yearly cost: (5/6 + 1) + (100 + 80)/(8+1) $/year = 0.2183/12 months/year = 1.8% of human lifespan
 
 A simple and cheap clock saves 1.2% of human lifetime = phone price dropped to $69
+
 A complex expensive setup saves only 1.1% more = phone price dropped further to $43
+
 That makes sense: the closer to the optimum, the harder it is to improve, hence the
 Paretto principle, the law of diminishing returns, the marginal cost/gain, etc.
   

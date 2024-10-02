@@ -4,6 +4,7 @@ Replace phone by other devices where possible
 ## Why
 <details><summary>1. A waste of money is a waste of life</summary><p>
   A $100 phone in USA costs 1 month of the average income in Brazil due to the abusive taxes. A law forbids banks to offer services to individuals without a phone app. Very convenient for the 4 big banks, which can afford Android and iOS development teams whereas small banks cannot. Without a phone, the individual cannot access its own money in the bank. With normal usage, the phone must be replaced every 2 years, but it can also be stolen way before that. Very convenient for the phone stores. How much of the lifespan of a human can be saved by extending the phone service life?
+  
   1. Normie: $100 for 2 years = 0.5 average month of income per year = 4.2% of human lifespan
 
   2. Smart: buy an alarm clock, so the phone is turned off at night:

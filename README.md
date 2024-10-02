@@ -3,7 +3,7 @@ Replace phone by other devices where possible
 
 ## Why
 <details><summary>1. A waste of money is a waste of life</summary><p>
-  A $100 phone in USA costs 1 month of the average income in Brazil due to the abusive taxes. A law forbids banks to offer services to individuals without a phone app. Very convenient for the 4 big banks, which can afford Android and iOS development teams whereas small banks cannot. Without a phone, the individual cannot access its own money in the bank. With normal usage, the phone must be replaced every 2 years, but it can also be stolen way before that. Very convenient for the phone stores. How much of the lifespan of a human can be saved by extending the phone service life?
+  A $100 phone in USA costs 1 month of the average income in Brazil due to the abusive taxes. A law forbids banks to offer services to individuals without a phone app. Very convenient for the 4 big banks, which can afford Android and iOS development teams whereas small banks cannot. Without a phone, the individual cannot access its own money in the bank. With normal usage, the phone must be replaced every 2 years, but it can also be stolen way before that. Very convenient for the phone stores. How much of the your human lifespan can be saved by extending the phone service life?
   
   1. Normie: $100 for 2 years = 0.5 average month of income per year = 4.2% of human lifespan
 
@@ -40,14 +40,14 @@ Paretto principle, the law of diminishing returns, the marginal cost/gain, etc.
 </p></details>
 
 <details><summary>2. OPSEC and privacy, ultimately freedom</summary><p>
-  A loose piece of information is worthless for the higher slaves trying to scam, tax, censor, harm or control the lower slave. The phone ties together all the data the slave generates there to its identity and location, which makes it a goldmine to the higher slaves. The more the lower slave replaces its phone with devices under its full control in its daily routine, the more the lower slave turns the goldmine into a garbage dump.
+  A loose piece of information is worthless for the people trying to scam, tax, censor, harm or control you. Your phone ties together all the data you generate there to your identity and location, which makes it a goldmine to the those people. The more you replace your phone with devices under your full control in your daily routine, the more the you turn that goldmine into a garbage dump.
   
 </p></details>
 
 </p></details>
 
 <details><summary>3. flexibility, ultimately peace</summary><p>
-  The lower slave decides how his devices work, not a higher slave worried about ad revenue and whatnot.
+  You decide how your devices work, not somebody worried about ad revenue and whatnot.
   
 </p></details>
 

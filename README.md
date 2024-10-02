@@ -14,6 +14,7 @@ Replace phone by other devices where possible
     Yearly cost: 100/3 + (5/6 + 1) $/year = 0.3516/12 months/year = 2.9 % of human lifespan
 
   3. Expert: smart + all of the following:
+
     a. only use phone 6 h/day, mostly in flight-mode
     b. keep GPS and bluetooth off most of the time
     c. cooled slow charging, no trickle charging

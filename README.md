@@ -3,42 +3,35 @@ Replace phone by other devices where possible
 
 ## Why
 <details><summary>1. A waste of money is a waste of life</summary><p>
-  A phone sold for $100 in USA costs 1 month of the average income in Brazil. There is also a law that forbids banks of offering services to individuals without a phone app. This is very convenient for the 4 big banks, which can afford to have multiple development teams for Android and iOS instead of just one team for just one responsive website. The usual excuse is "security", of course. An individual, better described as a "slave", is forced to have a phone in order to access its own fake money at the bank, but such phone will stop working soon and the slave will need to buy a new one. How much can the slave save of its meaningless lifespan by being aware of all this?
+  A $100 phone in USA costs 1 month of the average income in Brazil due to the abusive taxes. A law forbids banks to offer services to individuals without a phone app. Very convenient for the 4 big banks, which can afford Android and iOS development teams whereas small banks cannot. Without a phone, the individual cannot access its own money in the bank. With normal usage, the phone must be replaced every 2 years, but it can also be stolen way before that. Very convenient for the phone stores. How much of the lifespan of a human can be saved by extending the phone service life?
+  1. Normie: $100 for 2 years = 0.5 average month of income per year = 4.2% of human lifespan
 
-  1. Baseline slave: 24 h/day, always fast-charging, unaware of the damage caused by trickle charging.
+  2. Smart: buy an alarm clock, so the phone is turned off at night:
 
-    100 / 2 $/year = 0.5 month/year = 0.5/12 month/month = 4.2% of slave lifespan
+    (24-8) h/day + $5 for a clock that lasts 6 years + $1/year for batteries
+    Phone service life: 2 years * 24 / (24 - 8) = 3 years
+    Yearly cost: 100/3 + (5/6 + 1) $/year = 0.3516/12 months/year = 2.9 % of human lifespan
 
-  2. Smart slave who bought an alarm clock, so the phone is kept off during sleep hours:
-    
-    (24-8) h/day + $5 for an alarm clock with 6-year lifespan + $1/year for the alkaline batteries.
+  3. Expert: smart + all of the following:
+    a. only use phone 6 h/day, mostly in flight-mode
+    b. keep GPS and bluetooth off most of the time
+    c. cooled slow charging, no trickle charging
+    d. debloated ROM like LineageOS
 
-    Each 72h of slave life only consume 48h of phone lifetime. So:
-    New phone lifespan: 2 * 72/48 = 3 years
-    Alarm clock: lasts 6 years, so it costs (5/6 + 1) $/year, being 1 $/year for the alkaline batteries
+    Items a to c extend battery life so that it is no longer the limiting factor, which then
+    becomes the software: updates increase the footprint while the hardware wears and tears.
+    All items decrease wear & tear rate, but item d also decreases the baseline footprint.
 
-    (5/6 + 1) + 100/3 = 35.16 $/year = 0.3516/12 = 2.9 % of human lifespan
+    New baseline phone service life: 2 years * 24/6 = 8 years
+    Extra life due to lower wear & tear rate (wild guess): 1 year
+    Extra cost to setup items c and d: $80
 
-    The alarm clock is worth 1.2% of lifespan. 
-    Equivalent to a huge discount of 1 - 2.9/4.2 = 31 % in the phone purchase.
+    Yearly cost: (5/6 + 1) + (100 + 80)/(8+1) $/year = 0.2183/12 months/year = 1.8% of human lifespan
 
-  3. Expert slave: phone on only 06 h/day, most of the time in flight-mode, controlled slow charging at night with cooling, no trickle-charging and a custom debloated ROM like LineageOS.
-    
-    Change: the limiting factor is not the battery, but phone slowness. Software demands more and more whereas hardware wears down.
-
-    The alarm clock is still the same, but the more complex setup adds both cost and extra longevity.
-
-    Each 96h of slave life only consume 24h of phone life. So:
-    New phone lifespan simply due to turning it off: 2 * 96/24 = 8 years
-    Emerging extra phone lifespan added by the new setup (guess): +1 year
-    Extra cost added by the new setup (guess): $80
-    
-    (5/6 + 1) + (100 + 80)/(8+1) $/year = $21.83/year = 0.2183/12 = 1.8% of human life
-
-    Thus, first a simple clock saves 1.2% of life, but after that, saving 1.1% is much harder.
-    The marginal gain decreases. This is realistic. Paretto's principle, Law of Diminishing Returns, etc.
-    
-    But it still equates to a whopping discount of 1 - 1.8/4.2 = 57 % in the phone purchase!
+A simple and cheap clock saves 1.2% of human lifetime = phone price dropped to $69
+A complex expensive setup saves only 1.1% more = phone price dropped further to $43
+That makes sense: the closer to the optimum, the harder it is to improve, hence the
+Paretto principle, the law of diminishing returns, the marginal cost/gain, etc.
   
 </p></details>
 
